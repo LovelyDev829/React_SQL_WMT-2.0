@@ -1,14 +1,19 @@
+$color-000 : rgb(255, 255, 255);
+$color-001 : rgba(40, 53, 65, 0.1);
+$color-002 : rgb(81, 107, 132);
+$color-003 : rgb(53, 71, 88);
+$color-004 : rgb(40, 53, 65);
+
 .App {
-  background-color: rgba(40, 53, 65, 0.1);
+  
   height: 100vh;
   width: 100vw;
   svg {
-    color: white;
+    color: $color-000;
   }
   .Header {
     width: 100%;
-    // height: 70px;
-    background-color: rgb(255, 255, 255);
+    background-color: $color-000;
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.15);
     position: fixed;
     top: 0px;
@@ -20,12 +25,12 @@
     .left{
       display: flex;
       align-items: center;
-      // padding-left: 50px;
       p{
         margin: 0px;
         font-size: 30px;
         font-weight: 800;
         padding-left: 30px;
+        color: $color-003;
       }
     }
   }
@@ -33,40 +38,43 @@
     display: flex;
     .Sidebar {
       height: calc(100vh - 100px);
-      width: 300px;
-      background-color: rgb(40, 53, 65);
+      min-width: 300px;
+      background-color: $color-004;
       box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.697);
       // z-index: 1;
       padding-top: 100px;
       .item {
         cursor: pointer;
         display: flex;
-        color: white;
+        color: $color-000;
         padding: 10px 40px 10px 40px;
         // justify-content: space-between;
         p {
           margin: 0px 0px 0px 20px;
           font-weight: 500;
+          color: $color-000;
         }
       }
       .item.selected {
-        background-color: rgb(81, 107, 132);
+        background-color: $color-002;
       }
       .item.selected:hover {
-        background-color: rgb(81, 107, 132);
+        background-color: $color-002;
       }
       .item:hover {
-        background-color: rgb(66, 88, 108);
+        background-color: $color-003;
       }
     }
-    .MainBody {
+    .MainBody, .PrgramPage {
+      background-color: $color-001;
       padding: 100px 60px 0px 60px;
       width: 100%;
       box-sizing: border-box;
       .table {
+        color: $color-004;
         width: 100%;
         height: 300px;
-        background-color: white;
+        background-color: $color-000;
         padding: 30px 60px 30px 60px;
         box-sizing: border-box;
         box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.15);
