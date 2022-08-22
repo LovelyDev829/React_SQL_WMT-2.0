@@ -65,7 +65,7 @@ $color-004 : rgb(40, 53, 65);
         background-color: $color-003;
       }
     }
-    .MainBody, .PrgramPage {
+    .MainBody, .HomePage, .ImagePage, .InboxPage, .UserPage {
       background-color: $color-001;
       padding: 80px 60px 0px 60px;
       width: 100%;
